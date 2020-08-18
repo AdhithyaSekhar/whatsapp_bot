@@ -7,9 +7,9 @@ chrome_options.add_argument('--user-data-dir=./User_Data')
 driver = webdriver.Chrome(executable_path= r"C:\Users\ADHI\Downloads\chromedriver_win32 (1)\chromedriver.exe",options=chrome_options)
 driver.get("https://web.whatsapp.com/")
 
-name = "Appa"
-msg = "Program testing"
-count = 1
+name = input("Enter Recipient Name : ")
+msg = input("Enter the message to be sent : ")
+count = int(input("Enter number of times the message to be displayed : "))
 
 last_ht, ht = 0, 2
 not_found = True
